@@ -2,6 +2,11 @@ body {
   background: #E6F1CA;
 }
 
+footer {
+  width: 100vw;
+  background-color: #7EBEB9;
+}
+
 .container {
 	width: 65% !important;
 }
@@ -85,12 +90,13 @@ body {
 .data-box {
 	display: flex !important;
 	margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .box {
 	background-color: white;
-	border-radius: 15px;
-	padding: 15px;
+	padding: 15px 15px 2px 15px !important;
+  margin-bottom: 2px !important;
 }
 
 .icon {
@@ -110,6 +116,72 @@ body {
 .box-3 {
 	border-radius: 15px 15px 15px 15px;
 }
+
+.box p {
+  text-align: justify;
+}
+
+.footer-box {
+  padding: 6px 0;
+}
+
+/*BOX 3 ADMISION*/
+
+.box-admision {
+  background-image: url('../img/scene-adm.png');
+  background-size: 100%;
+  width: 300px;
+  height: 150px;
+  border-radius: 30px;
+}
+
+.box-admision p {
+  text-align: right;
+  margin-right: 20px; 
+  color: white;
+}
+
+.p1-adm {
+  padding-top: 28px;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.p2-adm {
+  margin: 0;
+}
+
+.flash-adm {
+  float: left;
+  position: relative;
+  width: 50%;
+  top: -66px;
+  border-radius: 0 0 0 30px;
+}
+
+.btn-adm {
+  margin-top: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
