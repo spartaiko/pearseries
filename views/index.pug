@@ -1,54 +1,15 @@
-doctype html
-html(lang='en')
+html
   head
-    meta(charset='UTF-8')
-    title pearseries
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
     link(rel='stylesheet', type='text/css', href='app.css')
+    meta(charset='UTF-8')
+    title=title
   body
     section#main-container
-      .container
-        .signup-box
-          .pearseries
-            img.pear-logo(src='/pear-logo.png', alt='pear-logo')
-            h1 pearseries
-            p Certificate en tus series favoritas
-          form.signup-form
-            .section
-              a.btn.btn-fb signin/Facebook
-            .divider
-            .section
-              input(type='email', name='email', placeholder='Correo electrónico')
-              input(type='text', name='name', placeholder='Nombre completo')
-              input(type='text', name='username', placeholder='Nombre de usuario')
-              input(type='password', name='password', placeholder='Contraseña')
-              button.btn.waves-effect.waves-light.btn-signup(type='submit') Regístrate
-            .row
-              .login-box
-                | ¿Tienes una cuenta? 
-                a(href='#') Entrar
-        .data-box
-          .box.box-1
-            .icon
-              i.fa.fa-certificate.fa-3x(aria-hidden='true')
-            p
-              strong Certificados
-              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam atque nisi eveniet labore sint voluptatum.
-          .box.box-2
-            .icon
-              i.fa.fa-file-text.fa-3x.iconi(aria-hidden='true')
-            p
-              strong Examenes
-              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda dicta fugit sapiente alias.
-          .box.box-3
-            .box-admision
-              img.flash-adm(src='/flash-adm.png', alt='flash-adm')
-              p.p1-adm Comprueba
-              p.p2-adm tus conocimientos
-              a.waves-effect.waves-light.btn.btn-adm admision
     footer.site-footer
       .col.s12.l3.push-l6.center-align.footer-box
         | © 2016 pearseries
     script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    script(type='application/javascript' src='app.js')

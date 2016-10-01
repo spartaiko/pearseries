@@ -10,17 +10,13 @@ app.get('/', function(req,res) {
 	res.render('index', {title:'pearseries' });
 })
 
+app.get('/signup', function (req, res) {
+  res.render('index', { title: 'pearseries - signup' });
+})
 
-
-
-
-
-
-
-
-
-
-
+app.get('/signin', function (req, res) {
+  res.render('index', { title: 'pearseries - signin' });
+})
 
 app.listen(3000, function(err) {
 	if (err) return console.log('ups! hubo un error'), process.exit(1);
