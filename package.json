@@ -1,0 +1,25 @@
+{
+  "name": "pearseries",
+  "version": "0.1.0",
+  "description": "pearseries. Certificate en tus series favoritas.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pearseries",
+    "series",
+    "examenes",
+    "certificados"
+  ],
+  "author": "juan magarinos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6",
+    "title": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}
