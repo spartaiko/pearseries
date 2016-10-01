@@ -95,26 +95,29 @@ footer {
 
 .box {
 	background-color: white;
-	padding: 15px 15px 2px 15px !important;
-  margin-bottom: 2px !important;
+	padding: 15px;
+  height: 220px;
 }
 
 .icon {
   display: flex;
 	justify-content: space-around;
+  margin-top: 23px;
 }
 
 .box-2 {
 	margin: 0 10px;
 	border-radius: 0px 15px 15px 0;
+  overflow: hidden;
 }
 
 .box-1 {
 	border-radius: 15px 0px 0px 15px;
+  overflow: hidden;
 }
 
 .box-3 {
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 15px;
 }
 
 .box p {
@@ -137,7 +140,6 @@ footer {
 
 .box-admision p {
   text-align: right;
-  margin-right: 20px; 
   color: white;
 }
 
@@ -161,6 +163,7 @@ footer {
 
 .btn-adm {
   margin-top: 17px;
+  border-radius: 10px;
 }
 
 
