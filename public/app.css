@@ -10,7 +10,7 @@ footer {
 
 .signup-form {
   height: 400px;
-  width: 30%;
+  width: 39%;
   background-color: white;
   padding: 30px;
   border-radius: 30px;
@@ -122,3 +122,35 @@ footer {
 .btn-adm {
   margin-top: 17px;
   border-radius: 10px; }
+
+.btn-reg-med {
+  width: 74%;
+  font-size: smaller;
+  text-align: center !important;
+  padding: 0 4px; }
+
+@media screen and (max-width: 1261px) {
+  .login-box {
+    margin-top: 31px;
+    font-size: 75%; }
+  .signup-form .btn.btn-fb {
+    width: 99%; }
+  .signup-form input {
+    font-size: small; }
+  .signup-form {
+    width: 43%; }
+  .signup-form button {
+    margin-top: 26px;
+    margin-bottom: 4px; }
+  .icon {
+    margin-top: 5px; }
+  .box p {
+    font-size: smaller; } }
+
+@media screen and (max-width: 500px) {
+  .signup-box {
+    display: inherit; }
+  .signup-form {
+    margin: 0 auto; }
+  .pearseries {
+    display: flex; } }

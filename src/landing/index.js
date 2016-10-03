@@ -5,8 +5,10 @@ module.exports = function landing(box) {
     <div class="signup-box">
       <div class="pearseries">
         <img class="pear-logo" src="pear-logo.png" alt="pear-logo" />
-        <h1>pearseries</h1>
-        <p>Certificate en tus series favoritas</p>
+        <div class="titulo-logo">
+          <h1>pearseries</h1>
+          <p>Certificate en tus series favoritas</p>
+        </div>
       </div>
       ${box}
     </div>
@@ -26,7 +28,7 @@ module.exports = function landing(box) {
         <div class="box box-3">
           <div class="box-admision">
             <img class="flash-adm" src="flash-adm.png" alt="flash-adm" />
-            <p class="p1-adm">Comprueba</p>
+            <p class="p1-adm">Prueba</p>
             <p class="p2-adm">tus conocimientos</p>
             <a class="waves-effect waves-light btn btn-adm">admision</a>
           </div>

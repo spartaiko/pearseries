@@ -2532,8 +2532,10 @@ module.exports = function landing(box) {
     <div class="signup-box">
       <div class="pearseries">
         <img class="pear-logo" src="pear-logo.png" alt="pear-logo" />
-        <h1>pearseries</h1>
-        <p>Certificate en tus series favoritas</p>
+        <div class="titulo-logo">
+          <h1>pearseries</h1>
+          <p>Certificate en tus series favoritas</p>
+        </div>
       </div>
       ${ box }
     </div>
@@ -2553,7 +2555,7 @@ module.exports = function landing(box) {
         <div class="box box-3">
           <div class="box-admision">
             <img class="flash-adm" src="flash-adm.png" alt="flash-adm" />
-            <p class="p1-adm">Comprueba</p>
+            <p class="p1-adm">Prueba</p>
             <p class="p2-adm">tus conocimientos</p>
             <a class="waves-effect waves-light btn btn-adm">admision</a>
           </div>
@@ -2581,7 +2583,7 @@ var landing = require('../landing');
 
 var signinForm = yo`<form class="signup-form">
       <div class="section">
-        <a class="btn btn-fb">Facebook</a>
+        <a class="btn btn-fb"><i class="fa fa-facebook-official hide-on-small-only" aria-hidden="true"></i> Facebook</a>
       </div>
       <div class="divider"></div>
       <div class="section">
@@ -2589,7 +2591,7 @@ var signinForm = yo`<form class="signup-form">
         <input type="text" name="name" placeholder="Nombre completo" />
         <input type="text" name="username" placeholder="Nombre de usuario" />
         <input type="password" name="password" placeholder="Contraseña" />
-        <button class="btn waves-effect waves-light btn-signup" type="submit">Regístrate</button>
+        <button class="btn waves-effect waves-light btn-signup btn-reg-med" type="submit">Regístrate</button>
       </div>
       <div class="row">
         <div class="login-box">
@@ -2619,13 +2621,13 @@ var landing = require('../landing');
 
 var signupForm = yo`<form class="signup-form">
   <div class="section">
-    <a class="btn btn-fb">Facebook</a>
+    <a class="btn btn-fb"><i class="fa fa-facebook-official hide-on-small-only" aria-hidden="true"></i> Facebook</a>
   </div>
   <div class="divider"></div>
   <div class="section">
     <input type="text" name="username" placeholder="Nombre de usuario" />
     <input type="password" name="password" placeholder="Contraseña" />
-    <button class="btn waves-effect waves-light btn-signup" type="submit">Regístrate</button>
+    <button class="btn waves-effect waves-light btn-signup btn-reg-med" type="submit">Regístrate</button>
   </div>
   <div class="row">
     <div class="login-box">
