@@ -77,14 +77,19 @@ footer {
 .box-2 {
   margin: 0 10px;
   border-radius: 0px 15px 15px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 0; }
 
 .box-1 {
   border-radius: 15px 0px 0px 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 0; }
 
 .box-3 {
   border-radius: 15px; }
+
+.boxing {
+  display: flex; }
 
 .box p {
   text-align: justify; }
@@ -102,7 +107,8 @@ footer {
   .box-admision p {
     text-align: right;
     color: white;
-    margin-right: 16px; }
+    margin-right: 16px;
+    font-size: large; }
 
 .p1-adm {
   padding-top: 28px;
@@ -115,8 +121,8 @@ footer {
 .flash-adm {
   float: left;
   position: relative;
-  width: 50%;
-  top: -66px;
+  width: 160px;
+  top: -80px;
   border-radius: 0 0 0 30px; }
 
 .btn-adm {
@@ -145,12 +151,77 @@ footer {
   .icon {
     margin-top: 5px; }
   .box p {
-    font-size: smaller; } }
+    font-size: smaller; }
+  .box-1 .box-2 {
+    padding-top: 15px; }
+  .box {
+    height: 198px; }
+  .boxing {
+    display: flex; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 840px) {
   .signup-box {
     display: inherit; }
   .signup-form {
     margin: 0 auto; }
   .pearseries {
-    display: flex; } }
+    display: block; }
+  .pear-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; }
+  .pearseries h1 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: x-large; }
+  .pearseries p {
+    margin-top: 0px; }
+  .box {
+    height: auto; }
+  .data-box {
+    display: block !important; }
+  .box-2 {
+    margin: 10px 0; }
+  .box-admision {
+    background-repeat: no-repeat;
+    width: auto;
+    height: 120px;
+    margin-bottom: 10px; }
+  .flash-adm {
+    width: 110px;
+    top: -38px; }
+  .btn-adm {
+    width: 100px;
+    height: 30px;
+    font-size: smaller;
+    padding: 0;
+    line-height: 2.6em;
+    float: right;
+    margin-right: 30px; }
+  .signup-form {
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    border: none; }
+  .text-admision p {
+    margin-right: 28px;
+    padding-top: 17px;
+    line-height: 1;
+    font-size: large; }
+  .boxing {
+    display: block; } }
+
+@media screen and (max-width: 450px) {
+  .btn-adm {
+    width: 78px;
+    height: 30px;
+    font-size: smaller;
+    padding: 0;
+    line-height: 2.6em;
+    float: right;
+    margin-right: 13px; }
+  .text-admision p {
+    margin-right: 18px;
+    padding-top: 22px;
+    line-height: 1.2;
+    font-size: small; } }
