@@ -2518,13 +2518,52 @@ module.exports = [
 
 },{}],17:[function(require,module,exports){
 var page = require('page');
+var empty = require('empty-element');
+var template = require('./template');
+var title = require('title');
+
+page('/admision', function (ctx, next) {
+
+	title('pearseries - Admision');
+	var main = document.getElementById('main-container');
+	empty(main).appendChild(template);
+});
+
+},{"./template":18,"empty-element":3,"page":10,"title":14}],18:[function(require,module,exports){
+var yo = require('yo-yo');
+var landing = require('../landing/admision.js');
+
+var admisionTest = yo`<div class="title">
+ <h1>pearseries - AdmisionTest</h1>
+</div>`;
+
+module.exports = landing(admisionTest);
+
+},{"../landing/admision.js":20,"yo-yo":15}],19:[function(require,module,exports){
+var page = require('page');
 
 require('./signup');
 require('./signin');
+require('./admision');
 
 page();
 
-},{"./signin":19,"./signup":21,"page":10}],18:[function(require,module,exports){
+},{"./admision":17,"./signin":22,"./signup":24,"page":10}],20:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = function landing(box) {
+  return yo`<div class="container">
+    <div class="admision-box">
+      <div class="psadmision-logo">
+        <img class="pear-logo-admision" src="pear-logo.png" alt="pear-logo" />
+        <h1>pearseries</h1>
+      </div>
+      ${ box }
+    </div>
+  </div>`;
+};
+
+},{"yo-yo":15}],21:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -2559,7 +2598,7 @@ module.exports = function landing(box) {
             <img class="flash-adm" src="flash-adm.png" alt="flash-adm" />
             <div class="text-admision">
               <p class="p1-adm">Prueba tus conocimientos</p>
-              <a class="waves-effect waves-light btn btn-adm">admision</a>
+              <a class="waves-effect waves-light btn btn-adm" href="/admision">admision</a>
             </div>
           </div>
         </div>
@@ -2567,7 +2606,7 @@ module.exports = function landing(box) {
   </div>`;
 };
 
-},{"yo-yo":15}],19:[function(require,module,exports){
+},{"yo-yo":15}],22:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -2580,7 +2619,7 @@ page('/signin', function (ctx, next) {
 	empty(main).appendChild(template);
 });
 
-},{"./template":20,"empty-element":3,"page":10,"title":14}],20:[function(require,module,exports){
+},{"./template":23,"empty-element":3,"page":10,"title":14}],23:[function(require,module,exports){
 var yo = require('yo-yo');
 var landing = require('../landing');
 
@@ -2605,7 +2644,7 @@ var signinForm = yo`<form class="signup-form">
 
 module.exports = landing(signinForm);
 
-},{"../landing":18,"yo-yo":15}],21:[function(require,module,exports){
+},{"../landing":21,"yo-yo":15}],24:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -2618,7 +2657,7 @@ page('/signup', function (ctx, next) {
 	empty(main).appendChild(template);
 });
 
-},{"./template":22,"empty-element":3,"page":10,"title":14}],22:[function(require,module,exports){
+},{"./template":25,"empty-element":3,"page":10,"title":14}],25:[function(require,module,exports){
 var yo = require('yo-yo');
 var landing = require('../landing');
 
@@ -2641,4 +2680,4 @@ var signupForm = yo`<form class="signup-form">
 
 module.exports = landing(signupForm);
 
-},{"../landing":18,"yo-yo":15}]},{},[17]);
+},{"../landing":21,"yo-yo":15}]},{},[19]);

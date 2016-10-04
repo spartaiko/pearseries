@@ -32,7 +32,7 @@ module.exports = function landing(box) {
             <img class="flash-adm" src="flash-adm.png" alt="flash-adm" />
             <div class="text-admision">
               <p class="p1-adm">Prueba tus conocimientos</p>
-              <a class="waves-effect waves-light btn btn-adm">admision</a>
+              <a class="waves-effect waves-light btn btn-adm" href="/admision">admision</a>
             </div>
           </div>
         </div>
