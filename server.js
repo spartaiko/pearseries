@@ -18,6 +18,10 @@ app.get('/signin', function (req, res) {
   res.render('index', { title: 'pearseries - signin' });
 })
 
+app.get('/admision', function (req, res) {
+  res.render('index', { title: 'pearseries - admision' });
+})
+
 app.listen(3000, function(err) {
 	if (err) return console.log('ups! hubo un error'), process.exit(1);
 

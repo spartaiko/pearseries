@@ -5,7 +5,7 @@ var title = require('title');
 
 page('/signup', function(ctx, next) {
 
-	title('pearseries - Signup');
+	title('Signup');
 	var main = document.getElementById('main-container');
     empty(main).appendChild(template);
 })

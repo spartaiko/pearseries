@@ -5,7 +5,7 @@ var title = require('title');
 
 page('/admision', function(ctx, next) {
 
-	title('pearseries - Admision');
+	title('Admision');
 	var main = document.getElementById('main-container');
     empty(main).appendChild(template);
 })
