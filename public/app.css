@@ -139,15 +139,15 @@ footer {
   .login-box {
     margin-top: 31px;
     font-size: 75%; }
-  .signup-form .btn.btn-fb {
-    width: 99%; }
-  .signup-form input {
-    font-size: small; }
   .signup-form {
     width: 43%; }
-  .signup-form button {
-    margin-top: 26px;
-    margin-bottom: 4px; }
+    .signup-form .btn.btn-fb {
+      width: 99%; }
+    .signup-form input {
+      font-size: small; }
+    .signup-form button {
+      margin-top: 26px;
+      margin-bottom: 4px; }
   .icon {
     margin-top: 5px; }
   .box p {

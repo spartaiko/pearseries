@@ -10,8 +10,3 @@ var admisionTest = yo`<div class="title">
 </div>`;
 
 module.exports = landing(admisionTest);
-
-
-
-
-
