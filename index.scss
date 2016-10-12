@@ -309,7 +309,8 @@ footer {
 }
 
 .psadmision-logo h1 {
-  margin: 10px 22px;  
+  margin-top: 28px;
+  font-size: xx-large;
 }
 
 .pear-logo-admision {
@@ -318,9 +319,46 @@ footer {
   margin: 0;
 }
 
+#frame h1 {
+  margin: 0 auto;
+  text-align: center;
+}
 
+#question {
+  font-size: xx-large;
+  margin: 0 auto 15px;
+  padding: 10px;
+  background-color: 7EBEB9;
+  /* border: 3px solid #90B824; */
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
 
+#question-image {
+  width: 100%;
+  border-radius: 20px;
+}
 
+#choice-block .choice-box {
+  background-color: #F6EA8F;
+  width: 40%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 12px;
+  border: 5px solid #90B824;
+  border-radius: 20px;
+}
+
+#submitbutton {
+  background-color: #90B824;
+  text-align: center;
+  width: 23%;
+  padding: 010px;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+}
 
 
 

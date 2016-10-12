@@ -155,7 +155,7 @@ module.exports = function (quiz) {
          submt = true;
          $('#explanation').empty();
          $('#question').text(quiz[currentquestion]['question']);
-         $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+         $('#pager').text('Pregunta ' + Number(currentquestion + 1) + ' of ' + quiz.length);
          if (quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != "") {
              if ($('#question-image').length == 0) {
                  $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
@@ -177,7 +177,7 @@ module.exports = function (quiz) {
              $('.choice').eq(choice).css({
                  'background-color': '#50D943'
              });
-             $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+             $('#explanation').html('<strong>Correcto!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
              score++;
          } else {
              $('.choice').eq(choice).css({
@@ -186,11 +186,11 @@ module.exports = function (quiz) {
              $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
          }
          currentquestion++;
-         $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function () {
+         $('#submitbutton').html('SIGUIENTE PREGUNTA &raquo;').on('click', function () {
              if (currentquestion == quiz.length) {
                  endQuiz();
              } else {
-                 $(this).text('Check Answer').css({
+                 $(this).text('Verifica la respuesta').css({
                      'color': '#222'
                  }).off('click');
                  nextQuestion();
@@ -256,7 +256,7 @@ module.exports = function (quiz) {
          //add pager and questions
          if (typeof quiz !== "undefined" && $.type(quiz) === "array") {
              //add pager
-             $(document.createElement('p')).addClass('pager').attr('id', 'pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+             $(document.createElement('p')).addClass('pager').attr('id', 'pager').text('Pregunta 1 de ' + quiz.length).appendTo('#frame');
              //add first question
              $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
              //add image if present
@@ -272,7 +272,7 @@ module.exports = function (quiz) {
              addChoices(quiz[0]['choices']);
 
              //add submit button
-             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
+             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Verifica la respuesta').css({
                  'font-weight': 700,
                  'color': '#222',
                  'padding': '30px 0'
