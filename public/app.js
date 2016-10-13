@@ -2523,6 +2523,7 @@ var template = require('./template');
 var title = require('title');
 
 page('/admision', function (ctx, next) {
+
 	title('Admision');
 	var main = document.getElementById('main-container');
 	empty(main).appendChild(template);
@@ -2531,7 +2532,7 @@ page('/admision', function (ctx, next) {
 },{"./template":18,"empty-element":3,"page":10,"title":14}],18:[function(require,module,exports){
 var yo = require('yo-yo');
 var quiztest = require('../quizDir');
-var landing = require('../landing/admision.js');
+var landingAdmin = require('../landingAdmin');
 
 var admisionTest = yo`<div class="title">
 	<div id = "frame" role = "content">
@@ -2539,9 +2540,9 @@ var admisionTest = yo`<div class="title">
   </div>
 </div>`;
 
-module.exports = landing(admisionTest);
+module.exports = landingAdmin(admisionTest);
 
-},{"../landing/admision.js":20,"../quizDir":22,"yo-yo":15}],19:[function(require,module,exports){
+},{"../landingAdmin":21,"../quizDir":22,"yo-yo":15}],19:[function(require,module,exports){
 var page = require('page');
 
 require('./signup');
@@ -2551,20 +2552,6 @@ require('./admision');
 page();
 
 },{"./admision":17,"./signin":23,"./signup":25,"page":10}],20:[function(require,module,exports){
-var yo = require('yo-yo');
-
-module.exports = function landing(box) {
-  return yo`<div class="container">
-    <div class="admision-box">
-      <div class="psadmision-logo">
-        <img class="pear-logo-admision" src="pear-logo.png" alt="pear-logo" />
-        <h1>Examen de admision</h1>
-      </div>
-      ${ box }
-  </div>`;
-};
-
-},{"yo-yo":15}],21:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -2607,7 +2594,23 @@ module.exports = function landing(box) {
   </div>`;
 };
 
-},{"yo-yo":15}],22:[function(require,module,exports){
+},{"yo-yo":15}],21:[function(require,module,exports){
+var yo = require('yo-yo');
+var quiztest = require('../quizDir');
+
+module.exports = function landingAdmin(box) {
+  return yo`<div class="container">
+    <div class="admision-box">
+      <div class="psadmision-logo">
+        <img class="pear-logo-admision" src="pear-logo.png" alt="pear-logo" />
+        <h1>Examen de puta</h1>
+      </div>
+      ${ box }
+      jsjdfjsjdfjsdjfjsd
+  </div>`;
+};
+
+},{"../quizDir":22,"yo-yo":15}],22:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = function (quiz) {
@@ -2725,7 +2728,7 @@ module.exports = function (quiz) {
                 $('.choice').eq(choice).css({
                     'background-color': '#D92623'
                 });
-                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong>Incorrecto!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
             }
             currentquestion++;
             $('#submitbutton').html('SIGUIENTE PREGUNTA &raquo;').on('click', function () {
@@ -2743,12 +2746,12 @@ module.exports = function (quiz) {
         function setupButtons() {
             $('.choice').on('mouseover', function () {
                 $(this).css({
-                    'background-color': '#e1e1e1'
+                    'background-color': '#'
                 });
             });
             $('.choice').on('mouseout', function () {
                 $(this).css({
-                    'background-color': '#fff'
+                    'background-color': '#'
                 });
             });
             $('.choice').on('click', function () {
@@ -2863,7 +2866,7 @@ var signinForm = yo`<form class="signup-form">
 
 module.exports = landing(signinForm);
 
-},{"../landing":21,"yo-yo":15}],25:[function(require,module,exports){
+},{"../landing":20,"yo-yo":15}],25:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -2899,4 +2902,4 @@ var signupForm = yo`<form class="signup-form">
 
 module.exports = landing(signupForm);
 
-},{"../landing":21,"yo-yo":15}]},{},[19]);
+},{"../landing":20,"yo-yo":15}]},{},[19]);

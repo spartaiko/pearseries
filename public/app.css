@@ -229,13 +229,14 @@ footer {
 /*ADMISION TEST*/
 .admision-box {
   border: 10px solid #C2D558 !important;
-  margin-top: 70px;
   background-color: white;
   border-radius: 50px !important;
   display: block;
   border: 1px solid #edeeee;
   border-radius: 3px;
-  padding: 10px; }
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto; }
 
 .psadmision-logo {
   display: flex; }
@@ -275,12 +276,21 @@ footer {
   padding: 12px;
   border: 5px solid #90B824;
   border-radius: 20px; }
+  #choice-block .choice-box:hover {
+    background-color: #C2D558; }
 
 #submitbutton {
   background-color: #90B824;
   text-align: center;
-  width: 23%;
-  padding: 010px;
+  width: 26%;
+  padding: 13px 0 !important;
   border-radius: 20px;
-  color: white;
-  margin: 0 auto; }
+  color: white !important;
+  margin: 0 auto;
+  font-weight: normal !important;
+  font-size: smaller; }
+
+#pager {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: 700; }

@@ -1,6 +1,6 @@
 var yo = require('yo-yo');
 var quiztest = require('../quizDir');
-var landing = require('../landing/admision.js')
+var landingAdmin = require('../landingAdmin');
 
 var admisionTest = yo`<div class="title">
 	<div id = "frame" role = "content">
@@ -9,4 +9,4 @@ var admisionTest = yo`<div class="title">
   </div>
 </div>`;
 
-module.exports = landing(admisionTest);
+module.exports = landingAdmin(admisionTest);

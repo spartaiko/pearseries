@@ -183,7 +183,7 @@ module.exports = function (quiz) {
              $('.choice').eq(choice).css({
                  'background-color': '#D92623'
              });
-             $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+             $('#explanation').html('<strong>Incorrecto!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
          }
          currentquestion++;
          $('#submitbutton').html('SIGUIENTE PREGUNTA &raquo;').on('click', function () {
@@ -202,12 +202,12 @@ module.exports = function (quiz) {
      function setupButtons() {
          $('.choice').on('mouseover', function () {
              $(this).css({
-                 'background-color': '#e1e1e1'
+                 'background-color': '#'
              });
          });
          $('.choice').on('mouseout', function () {
              $(this).css({
-                 'background-color': '#fff'
+                 'background-color': '#'
              });
          })
          $('.choice').on('click', function () {
